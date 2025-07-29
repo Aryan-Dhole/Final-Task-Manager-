@@ -1,0 +1,45 @@
+li {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.flash-update {
+    background-color: #caffbf;
+    border-left: 7px solid hsl(110, 73%, 31%);
+    transition: background-color 0.5s ease;
+}
+
+.flash-update {
+    animation: flashEffect 0.5s ease;
+}
+
+@keyframes flashEffect {
+    0% {
+        background-color: #caffbf;
+    }
+
+    100% {
+        background-color: inherit;
+    }
+}
+
+li.list-group-item {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* optional: add border-radius or box-shadow if needed */
+}
+
+li.list-group-item:hover {
+    background-color: #f1f1f1;
+    /* subtle light gray */
+    transform: scale(1.005);
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+button:hover {
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
